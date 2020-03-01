@@ -4,43 +4,44 @@
 using namespace std;
 
 int main() {
-	int a,b,c;
+	double a,b,c;
 	cin >> a >> b;
 	char z;
-	cout << "Input + - * / &:";
+	cout << "Input 1->+ 2->- 3->* 4->/ 5->sqrt:";
 	cin >> z;
 	switch (z){
-		case '+':
+		case '1':
 		{
 		c = a + b; 
 		cout << c;
 		break;
 		}
 			
-		case '-':
+		case '2':
 		{	
 		c = a - b;
 		cout << c;
 		break;
 		}
 	
-		case '*':
+		case '3':
 		{
 		c = a * b;
 		cout << c;
 		break;
 		}
 		
-		case '/':
+		case '4':
 		{
 		c = a / b;
 		cout << c;
 		break;
 		}
-		case '&':
+		case '5':
 		{
-		c = sqrt(a+b);
-		cout << c;
+		a = sqrt(a);
+		b = sqrt(b);
+		cout << a << " "<< b;
 		break;		
 		}
 	}
