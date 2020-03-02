@@ -5,10 +5,9 @@ using namespace std;
 
 int main() {
 	double a,b,c;
-	cin >> a >> b;
 	char z;
-	cout << "Input 1->+ 2->- 3->* 4->/ 5->sqrt:";
 	cin >> z;
+	cin >> a >> b;
 	switch (z){
 		case '1':
 		{
@@ -39,9 +38,8 @@ int main() {
 		}
 		case '5':
 		{
-		a = sqrt(a);
-		b = sqrt(b);
-		cout << a << " "<< b;
+		c = sqrt(a) + sqrt(b);
+		cout << c;
 		break;		
 		}
 	}
