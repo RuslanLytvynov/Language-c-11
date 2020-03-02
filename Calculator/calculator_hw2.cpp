@@ -10,38 +10,28 @@ int main() {
 	cin >> a >> b;
 	switch (z){
 		case '1':
-		{
-		c = a + b; 
-		cout << c;
-		break;
-		}
-			
-		case '2':
-		{	
-		c = a - b;
-		cout << c;
-		break;
-		}
-	
-		case '3':
-		{
-		c = a * b;
-		cout << c;
-		break;
-		}
-		
-		case '4':
-		{
-		c = a / b;
-		cout << c;
-		break;
-		}
-		case '5':
-		{
-		c = sqrt(a) + sqrt(b);
-		cout << c;
-		break;		
-		}
+			c = a + b; 
+			cout << c;
+			break;			
+		case '2':		
+			c = a - b;
+			cout << c;
+			break;	
+		case '3':	
+			c = a * b;
+			cout << c;
+			break;	
+		case '4':		
+			c = a / b;
+			cout << c;
+			break;
+		case '5':		
+			c = sqrt(a) + sqrt(b);
+			cout << c;
+			break;		
+		default:
+			cout << "error";
+			break;
 	}
 }
 
